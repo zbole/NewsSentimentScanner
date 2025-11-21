@@ -26,7 +26,7 @@ def fetch_news(query, num_articles=10):
         link = item.link
         published = item.published
         content = fetch_article_content(link)
-        
+
         articles.append({
             "title": title,
             "link": link,
