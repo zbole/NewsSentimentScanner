@@ -57,7 +57,7 @@ def send_wechat_alert(symbol, title, sentiment, confidence, link):
     url = 'http://www.pushplus.plus/send'
 
     # --- 1. 计算标题显示的中文方向 ---
-    direction = "异动"  # 默认值
+    direction = ""  # 默认值
     emoji = "😐"
 
     if sentiment == "Positive":
